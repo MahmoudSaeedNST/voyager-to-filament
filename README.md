@@ -65,7 +65,7 @@ php artisan voyager:convert-to-filament --all --with-relationships
 php artisan voyager:convert-to-filament --all --force
 ```
 
-## 📋 Available Commands
+## Available Commands
 
 ### Main Command
 ```bash
