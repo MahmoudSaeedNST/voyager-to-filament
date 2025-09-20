@@ -1,0 +1,83 @@
+{
+    "name": "hexaora/voyager-to-filament",
+    "description": "Convert Voyager BREAD configurations to Filament 4 Resources with advanced field mapping and relationship support",
+    "version": "1.0.0",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "voyager",
+        "filament",
+        "migration",
+        "converter",
+        "admin-panel",
+        "bread",
+        "resource",
+        "filament-4"
+    ],
+    "homepage": "https://github.com/MahmoudSaeedNST/voyager-to-filament",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hexaora",
+            "homepage": "https://www.youtube.com/@HEXAORA"
+        },
+        {
+            "name": "Mahmoud Saeed",
+            "homepage": "https://github.com/MahmoudSaeedNST"
+        }
+    ],
+    "require": {
+        "php": "^8.1|^8.2|^8.3",
+        "laravel/framework": "^10.0|^11.0",
+        "filament/filament": "^4.0",
+        "illuminate/console": "^10.0|^11.0",
+        "illuminate/support": "^10.0|^11.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hexaora\\VoyagerToFilament\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hexaora\\VoyagerToFilament\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hexaora\\VoyagerToFilament\\Providers\\VoyagerToFilamentServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes",
+        "analyse": "vendor/bin/phpstan analyse",
+        "release:patch": [
+            "@test",
+            "npm version patch",
+            "git push origin main --tags"
+        ],
+        "release:minor": [
+            "@test", 
+            "npm version minor",
+            "git push origin main --tags"
+        ],
+        "release:major": [
+            "@test",
+            "npm version major", 
+            "git push origin main --tags"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
