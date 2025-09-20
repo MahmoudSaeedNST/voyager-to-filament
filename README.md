@@ -254,7 +254,7 @@ Contributions are welcome! Please see our contributing guidelines:
 
 ## 📄 License
 
-This package is open-sourced software licensed under the [MIT license]([LICENSE.md](https://github.com/MahmoudSaeedNST/voyager-to-filament/blob/main/LICENSE)).
+This package is open-sourced software licensed under the [MIT license](https://github.com/MahmoudSaeedNST/voyager-to-filament/blob/main/LICENSE).
 
 ## 👥 Credits
 
