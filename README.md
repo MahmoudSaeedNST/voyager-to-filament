@@ -263,7 +263,6 @@ This package is open-sourced software licensed under the [MIT license]([LICENSE.
 ### Special Thanks
 - [Filament Team](https://github.com/filamentphp) - For creating an amazing admin panel
 - [Voyager Team](https://github.com/the-control-group/voyager) - For the inspiration
-- Laravel Community - For the continuous support
 
 ## 🔗 Links
 
